@@ -35,28 +35,52 @@ const results1 = map(words, word => word[0]);
 
 const takeUntil = function(array, callback) {
   // ...
-  const results = [];
+
+  let newArr = array.slice();
   
+  for
+  (let [index,item] of array.entries()) {
+
+    console.log(item);
+
+    if (callback(item)) {
+
+      newArr.splice(index,array.length);
+      return newArr;
+    }
+  }
 
 };
 
+const data1 = [
+  
+  1, 2, 5, 7, 2, -1, 2, 4, 5
 
+];
 
-const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x < 0);
+const results1 =
+  takeUntil(data1, x => x < 0);
+
 console.log(results1);
   
 console.log('---');
-  
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === ',');
+
+const data2 = [
+
+  "I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"
+
+];
+
+const results2 =
+  takeUntil(data2, x => x === ',');
+
 console.log(results2);
 
 
 
 /*
 
-Expected Output 
+Expected Output
 
 [ 1, 2, 5, 7, 2 ]
 --
