@@ -11,18 +11,18 @@ The map function will return a new array based on the results of the callback fu
 */
 
 const eqArrays = (a, b) => {
-    return a.toString() === b.toString();
-  };
+  return a.toString() === b.toString();
+};
   
-  const assertEqual = function(actual, expected) {
+const assertEqual = function(actual, expected) {
   
-    if (actual === expected) {
-      console.log(`✅✅✅Assertion Passed: [${actual}] === [${expected}]`);
-    } else {
-      console.log(`🛑🛑🛑Assertion Failed: [${actual}] !== [${expected}]`);
-    }
+  if (actual === expected) {
+    console.log(`✅✅✅Assertion Passed: [${actual}] === [${expected}]`);
+  } else {
+    console.log(`🛑🛑🛑Assertion Failed: [${actual}] !== [${expected}]`);
+  }
   
-  };
+};
   
   
   
@@ -42,9 +42,19 @@ const assertArraysEqual = (a,b) => {
   }
 };
   
+/*
+const jahQuotes = ["that's cap", "bro fuck", "take that", "clappin it up", "no way bro", "bro you on drugs?", "wassup with that"];
+
+const jahBot = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
+  }
+};
+const JizzyJah = jahBot(jahQuotes, skeet => skeet+"ahaaa haaa" )
 
 
-
+*/
 
 const words = ["ground", "control", "to", "major", "tom"];
 
