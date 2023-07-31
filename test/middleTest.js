@@ -1,13 +1,53 @@
 const assertArraysEqual = require('../assertArraysEqual');
 const eqArrays = require('../eqArrays');
 const middle = require('../middle');
+const assert = require('chai').assert;
+
+
+describe("#head", () => {
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1]), []), true);
+  });
+  
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2]), []), true);
+  });
+
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2, 3]), [2]), true);
+  });
+
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3]), true);
+  });
+
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true);
+  });
+
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3,4]), true);
+  });
+
+  it("returns true", () => {
+    assert.strictEqual(eqArrays(middle([1, 2]), []), true);
+  });
 
 
 
-assertArraysEqual(eqArrays(middle([1]), []), true);
-assertArraysEqual(eqArrays(middle([1, 2]), []), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3]), [2]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3,4]), true);
-assertArraysEqual(eqArrays(middle([1, 2]), []), true);
+
+
+
+
+});
+
+/*
+assert.strictEqual(eqArrays(middle([1]), []), true);
+assert.strictEqual(eqArrays(middle([1, 2]), []), true);
+assert.strictEqual(eqArrays(middle([1, 2, 3]), [2]), true);
+assert.strictEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3]), true);
+assert.strictEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true);
+assert.strictEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3,4]), true);
+assert.strictEqual(eqArrays(middle([1, 2]), []), true);
+
+*/

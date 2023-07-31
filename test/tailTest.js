@@ -1,5 +1,6 @@
 const tail = require('../tail.js');
 const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
 // TEST CODE
 
