@@ -4,7 +4,7 @@ const middle = require('../middle');
 const assert = require('chai').assert;
 
 
-describe("#head", () => {
+describe("#middle", () => {
   it("returns true", () => {
     assert.strictEqual(eqArrays(middle([1]), []), true);
   });
