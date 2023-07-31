@@ -1,15 +1,5 @@
-const assertArraysEqual = (a,b) => {
-  if (a.toString() === b.toString()) {
-    console.log(`✅✅✅Assertion Passed: [${a}] === [${b}]`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: [${a}] !== [${b}]`);
-        
-  }
-};
-
-const eqArrays = (a, b) => {
-  return a.toString() === b.toString();
-};
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
   
 const middle = (arr) => {
   let returnedArr = [];
@@ -34,18 +24,14 @@ const middle = (arr) => {
   return returnedArr;
 };
 
+module.exports = middle;
+
 //assertArraysEqual([1,2,3],[1,2,4]);
 //assertEqual(eqArrays([1, 2, 3], [1, 2, 3]),true); // => true
 
 //assertEqual(head([5,6,7]), 5);
 
-assertArraysEqual(eqArrays(middle([1]), []), true);
-assertArraysEqual(eqArrays(middle([1, 2]), []), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3]), [2]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5]), [3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4]), [2, 3]), true);
-assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3,4]), true);
-assertArraysEqual(eqArrays(middle([1, 2]), []), true);
+
 
 
 // find middle of array
