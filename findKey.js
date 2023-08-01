@@ -11,6 +11,8 @@ const findKey = function (obj, callback) {
   return result;
 };
 
+/*
+
 console.log(
   findKey(
     {
@@ -54,3 +56,7 @@ assertEqual(
   ),
   "Blue Hill"
 );
+
+*/
+
+module.exports = findKey;

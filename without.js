@@ -1,3 +1,5 @@
+const { takeUntil } = require(".");
+
 const assertArraysEqual = (a,b) => {
   if (a.toString() === b.toString()) {
     console.log(`✅✅✅Assertion Passed: [${a}] === [${b}]`);
@@ -158,9 +160,13 @@ for (let item in itemsToRemove){
  */
 //otherwise if it's numeric then the new array contains numbers that aren't in itemsToRemove
 
-
+/*
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 
 assertArraysEqual([1,2,3],[1,2,4]);
+
+*/
+
+module.exports = without;

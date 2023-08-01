@@ -52,6 +52,8 @@ const takeUntil = function(array, callback) {
 
 };
 
+/*
+
 const data1 = [
   
   1, 2, 5, 7, 2, -1, 2, 4, 5
@@ -88,3 +90,5 @@ Expected Output
 
 
 */
+
+module.exports = takeUntil;

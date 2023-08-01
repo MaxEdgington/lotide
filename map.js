@@ -56,7 +56,7 @@ const JizzyJah = jahBot(jahQuotes, skeet => skeet+"ahaaa haaa" )
 
 */
 
-const words = ["ground", "control", "to", "major", "tom"];
+//const words = ["ground", "control", "to", "major", "tom"];
 
 const map = function(array, callback) {
   const results = [];
@@ -66,7 +66,7 @@ const map = function(array, callback) {
   return results;
 };
   
-
+/*
 const results1 = map(words, word => word[0]);
 const results2 = map(words, word => word[1]);
 const results3 = map(words, word => word[2]);
@@ -79,3 +79,9 @@ assertEqual(eqArrays(results3, ["g", "2", 3]), false);// => false
 //console.log(results1);
 
 //console.log(results1);
+*/
+
+module.exports = map;
+
+
+

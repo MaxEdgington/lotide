@@ -39,7 +39,7 @@ const countLetters = function(str) {
   return result;
 };
   
+module.exports = countLetters;
   
-  
-console.log(countLetters("check me out!"));
-assertArraysEqual(letterPositions("hello").e, [1]);
+//console.log(countLetters("check me out!"));
+//assertArraysEqual(letterPositions("hello").e, [1]);
